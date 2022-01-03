@@ -8,6 +8,8 @@ To eat, a philosopher needs two forks, which put restrictions on the number of p
 The goal of this project is simple, we have to keep all the philosophers alive, and they have to do cycles of their three activities.
 To solve this problem, I used threads, one per philosophers, and mutexes, one per fork. This to make sure that no fork was used by multiples philosophers at the same time.
 
+It was a very interesting project to learn more about multi-processes programation and how to lock and unlock key variables.
+
 The parameters of this program:
   --> nb_of_philosophers : the number of philosophers around the table. 
   --> time_to_die : the limit delay between two meals for a philosopher to die.
@@ -16,4 +18,6 @@ The parameters of this program:
   --> nb_of_meals_before_exit : an optionnal argument fixing a number of meals after which the philosophers will be satisfied.
 
 To use :
-  ./philosophers nb_of_philosophers time_to_die time_to_eat time_to_sleep [optionnal] nb_of_meals_before_exit
+  ./philo nb_of_philosophers time_to_die time_to_eat time_to_sleep [optionnal] nb_of_meals_before_exit
+
+![philo](https://user-images.githubusercontent.com/55747965/147947208-d7889ffa-5646-4ad0-858f-c917ced87ba9.gif)
