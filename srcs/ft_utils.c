@@ -27,7 +27,7 @@ long	ft_get_time(void)
 	long					time;
 
 	gettimeofday(&tv, NULL);
-	time = tv.tv_sec * 1000 + (tv.tv_usec / 1000);
+	time = tv.tv_sec * 1000 + (tv.tv_usec / 1000); // Convert to milliseconds
 	return (time);
 }
 
