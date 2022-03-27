@@ -10,12 +10,12 @@ To solve this problem, I used threads, one per philosophers, and mutexes, one pe
 
 It was a very interesting project to learn more about multi-processes programation and how to lock and unlock key variables.
 
-The parameters of this program:
-  --> nb_of_philosophers : the number of philosophers around the table. 
-  --> time_to_die : the limit delay between two meals for a philosopher to die.
-  --> time_to_eat : the delay for a philosopher to eat.
-  --> time_to_sleep : the delay for a philosopher to sleep.
-  --> nb_of_meals_before_exit : an optionnal argument fixing a number of meals after which the philosophers will be satisfied.
+The parameters of this program:  
+  --> nb_of_philosophers : the number of philosophers around the table.  
+  --> time_to_die : the limit delay between two meals for a philosopher to die.  
+  --> time_to_eat : the delay for a philosopher to eat.  
+  --> time_to_sleep : the delay for a philosopher to sleep.  
+  --> nb_of_meals_before_exit : an optionnal argument fixing a number of meals after which the philosophers will be satisfied.  
 
 To use :
   ./philo nb_of_philosophers time_to_die time_to_eat time_to_sleep [optionnal] nb_of_meals_before_exit
