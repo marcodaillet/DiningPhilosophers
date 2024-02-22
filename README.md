@@ -1,23 +1,22 @@
-# Philosophers
+# Dining Philosophers Problem
 
-This project is a common computing problem known as the dining philosophers problem.
-There is x philosophers around a tabled who do three distincts activities : eat, think and sleep.
-There is x forks, one by philosopher. While doing any action, a philosopher doesn't do the other two.
-To eat, a philosopher needs two forks, which put restrictions on the number of philosophers able to eat at the same time.
+This project addresses the classic computing problem known as the Dining Philosophers Problem. In this scenario, a group of philosophers sits around a table, engaging in three distinct activities: eating, thinking, and sleeping. Each philosopher requires two forks to eat, which introduces constraints on the number of philosophers who can eat simultaneously.
 
-The goal of this project is simple, we have to keep all the philosophers alive, and they have to do cycles of their three activities.
-To solve this problem, I used threads, one per philosophers, and mutexes, one per fork. This to make sure that no fork was used by multiples philosophers at the same time.
+## Objective
+The goal of this project is to ensure the survival of all philosophers while they cycle through their activities. To tackle this problem, I implemented a solution using threads, with one thread per philosopher, and mutexes, with one mutex per fork. This approach ensures that no fork is used by multiple philosophers simultaneously, preventing deadlock or resource contention.
 
-It was a very interesting project to learn more about multi-processes programation and how to lock and unlock key variables.
+## Key Learnings
+This project provided an excellent opportunity to delve into multi-process programming concepts and practice working with thread synchronization mechanisms such as mutexes. By developing this solution, I gained valuable insights into managing concurrent processes and understanding the importance of locking and unlocking critical resources.
 
-The parameters of this program:  
-  --> nb_of_philosophers : the number of philosophers around the table.  
-  --> time_to_die : the limit delay between two meals for a philosopher to die.  
-  --> time_to_eat : the delay for a philosopher to eat.  
-  --> time_to_sleep : the delay for a philosopher to sleep.  
-  --> nb_of_meals_before_exit : an optionnal argument fixing a number of meals after which the philosophers will be satisfied.  
+## Program Parameters
+- `nb_of_philosophers`: Number of philosophers around the table.
+- `time_to_die`: Maximum delay between two meals for a philosopher to survive.
+- `time_to_eat`: Time taken for a philosopher to complete a meal.
+- `time_to_sleep`: Duration of sleep for a philosopher.
+- `nb_of_meals_before_exit` (Optional): Number of meals after which the philosophers will exit the simulation.
 
-To use :
-  ./philo nb_of_philosophers time_to_die time_to_eat time_to_sleep [optionnal] nb_of_meals_before_exit
-
-![philo](https://user-images.githubusercontent.com/55747965/147947208-d7889ffa-5646-4ad0-858f-c917ced87ba9.gif)
+## Usage
+To run the program, use the following command:
+```
+./philo nb_of_philosophers time_to_die time_to_eat time_to_sleep [nb_of_meals_before_exit]
+```
