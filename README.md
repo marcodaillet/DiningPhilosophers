@@ -20,3 +20,6 @@ To run the program, use the following command:
 ```
 ./philo nb_of_philosophers time_to_die time_to_eat time_to_sleep [nb_of_meals_before_exit]
 ```
+
+## Video
+![Dining Philosophers Simulation](https://user-images.githubusercontent.com/55747965/147947208-d7889ffa-5646-4ad0-858f-c917ced87ba9.gif)
